@@ -1,0 +1,22 @@
+{
+    "name":"RTBMS",
+    "short_name":"RTBMS",
+    "scope":".",
+    "start_url":"/",
+    "background_color":"#ffc362",
+    "theme_color":"#ffc362",
+    "display":"standalone",
+    "orientation":"portrait",
+    "icons": [
+        {
+            "src":"/assets/img/Application-Icon.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"/assets/img/Splashscreen-Icon.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        }
+    ]
+}

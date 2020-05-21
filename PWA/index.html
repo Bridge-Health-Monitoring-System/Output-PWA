@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RTBMS</title>
+    <meta name="theme-color" content="#ffc362">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Application-Icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/Splashscreen-Icon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/img/Application-Icon.png">
+    <link rel="apple-touch-startup-image" href="assets/img/Splashscreen-Icon.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+</head>
+
+<body>
+    <img src="assets/img/HG.png" style="width: 100%;margin-bottom: 30px;">
+    <h1 class="text-center" style="font-family: 'Abril Fatface', cursive;font-weight: normal;font-size: 35px;color: #2c2e55;margin-top: -50px;">Real-Time Bridge Monitoring System</h1>
+    <div class="card border-white">
+        <div class="card-body border rounded border-white" style="background-color: rgba(255,195,98,0.65);padding: 0px;margin-right: 30px;margin-left: 30px;height: 355px;width: 313px;">
+            <h4 class="text-left card-title" style="padding: 15px;font-family: 'Abhaya Libre', serif;font-weight: bold;color: #f7763e;font-size: 30px;">
+                Login
+            </h4>
+
+            <input id="number_field" type="tel" style="margin-right: 15px;margin-left: 15px;height: 38px;width: 283px;" placeholder="Enter Phone Number (+91...)">
+            
+            <div id="recaptcha_container" style="margin-left: 5px;"></div>
+
+            <button id="otp_button" class="btn btn-primary active border rounded" data-bs-hover-animate="pulse" type="submit" style="width: 213px;margin-top: 10px;margin-right: 50px;margin-left: 50px;background-color: #f7763e;" onclick="phoneAuth()">
+                Send OTP
+            </button>
+
+            <input id="otp_field" type="password" style="width: 283px;height: 38px;margin-top: 10px;margin-right: 15px;margin-left: 15px;" placeholder="Enter OTP">
+
+            <button id="login_button" class="btn btn-primary active border rounded" data-bs-hover-animate="pulse" type="submit" style="width: 213px;margin-top: 10px;margin-right: 50px;margin-left: 50px;background-color: #f7763e;" onclick="codeVerify()">
+                Login
+            </button>
+        </div>
+    </div>
+    <img src="assets/img/FG.png" style="width: 100%;padding-top: 10px;">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyBu0ZtJoEqpeVPtmUcKMisp7CO6t_7K2zM",
+        authDomain: "rtbhms-iot.firebaseapp.com",
+        databaseURL: "https://rtbhms-iot.firebaseio.com",
+        projectId: "rtbhms-iot",
+        storageBucket: "rtbhms-iot.appspot.com",
+        messagingSenderId: "2728745419",
+        appId: "1:2728745419:web:7c5aaa3ed476bf511b3e4e",
+        measurementId: "G-F96KDY3PQ5"
+    };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>
