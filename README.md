@@ -2,7 +2,7 @@
 
 A Progressive Web App to display the output of our Real Time Bridge Health Monitoring System Project
 
-The Progressive Web App is currently suitable for viewing only **phones with 4.7-inch screens**
+The Progressive Web App is currently suitable for viewing only on **phones with 4.7-inch screens**
 
 It makes use of Firebase for OTP-based Authentication and Real-Time Database
 
