@@ -11,13 +11,18 @@ It makes use of Firebase for OTP-based Authentication and Real-Time Database
 # Snapshots
 
 ## Login Screen
-![LoginScreen](https://github.com/Bridge-Health-Monitoring-System/Output-PWA/blob/master/Snapshots/1.png)
+
+<img src="https://github.com/Bridge-Health-Monitoring-System/Output-PWA/blob/master/Snapshots/1.png" width="375">
 <br/>
+
 ## Home Screen
-![HomeScreen](https://github.com/Bridge-Health-Monitoring-System/Output-PWA/blob/master/Snapshots/2.png)
+
+<img src="https://github.com/Bridge-Health-Monitoring-System/Output-PWA/blob/master/Snapshots/2.png" width="375">
 <br/>
+
 ## Bridge Screen
-![BridgeScreen](https://github.com/Bridge-Health-Monitoring-System/Output-PWA/blob/master/Snapshots/3.png)
+
+<img src="https://github.com/Bridge-Health-Monitoring-System/Output-PWA/blob/master/Snapshots/3.png" width="375">
 <br/>
 
 Graphics Credit: https://www.freepik.com/free-vector/welcome-san-francisco-landing-page-template_5127984.htm#page=1&query=welcome%20to%20san%20francisco&position=4
